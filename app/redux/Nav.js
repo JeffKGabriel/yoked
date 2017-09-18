@@ -39,10 +39,17 @@ export default function Nav(state = initialNavState, action) {
         state
       )
       break;
+
     case 'Breezy':
-      console.log("in nav, breezy")
       nextState = AppNavigator.router.getStateForAction(
         NavigationActions.navigate({ routeName: 'Breezy' }),
+        state
+      )
+      break;
+
+    case 'AddLift':
+      nextState = AppNavigator.router.getStateForAction(
+        NavigationActions.navigate({ routeName: 'AddLift' }),
         state
       )
       break;

@@ -1,7 +1,7 @@
 import { ref } from '../config/constants'
 
 export function updateUser(user){
-  return ref.child(`users/${user.uid}`).set(user)
+  return ref.child(`users/${user.uid}`).update(user)
 }
 
 export function fetchUser (uid) {

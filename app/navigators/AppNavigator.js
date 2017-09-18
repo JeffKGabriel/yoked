@@ -7,13 +7,15 @@ import MainScreen from '../components/MainScreen'
 import ProfileScreen from '../components/ProfileScreen';
 import Breezy from '../components/Breezy'
 import Splash from '../components/Splash'
+import AddLift from '../components/AddLift'
+
 
 
 let MyTransition = (index, position) => {
     const inputRange = [index - 1, index, index + 1];
     const opacity = position.interpolate({
-        inputRange,
-        outputRange: [.8, 1, 1],
+       inputRange,
+       outputRange: [0,1,1]//  outputRange: [.8, 1, 1],
     });
 
     const scaleY = position.interpolate({
@@ -51,6 +53,7 @@ export const AppNavigator = StackNavigator(
   //  Profile: { screen: ProfileScreen },
   Breezy: { screen: Breezy },
   Splash: {screen:Splash},
+  AddLift : {screen:AddLift},
   },
   {
     transitionConfig: TransitionConfiguration

@@ -5,6 +5,7 @@ import MyAuth from './Auth'
 import OldAuth from './OldAuth'
 import User from './User'
 import Network from './Network'
+import Lifts from './Lifts'
 
 
 
@@ -15,6 +16,7 @@ const AppReducer = combineReducers({
   MyAuth,
   User,
   Network,
+  Lifts,
 });
 
 export default AppReducer;
