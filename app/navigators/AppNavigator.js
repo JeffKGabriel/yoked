@@ -7,7 +7,7 @@ import MainScreen from '../components/MainScreen'
 import ProfileScreen from '../components/ProfileScreen';
 import Breezy from '../components/Breezy'
 import Splash from '../components/Splash'
-import AddLift from '../components/AddLift'
+import AddLift from '../components/Main/Add/AddLift'
 
 
 

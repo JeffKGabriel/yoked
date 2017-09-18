@@ -12,8 +12,8 @@ import Swiper from 'react-native-swiper'
 
 import UserPic from './UserPic'
 
-import WeeklyBar from './WeeklyBar'
-import DailyLifts from  './DailyLifts'
+import WeeklyBar from './Main/Week/WeeklyBar'
+import DailyLifts from  './Main/Lifts/DailyLifts'
 
 Date.prototype.yyyymmdd = function() {
   var mm = this.getMonth() + 1; // getMonth() is zero-based

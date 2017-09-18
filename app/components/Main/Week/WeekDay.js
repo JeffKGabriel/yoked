@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 
 import {connect} from 'react-redux'
 
-import {changeDisplayedDate} from '../redux/Lifts'
+import {changeDisplayedDate} from '../../../redux/Lifts'
 
 
 

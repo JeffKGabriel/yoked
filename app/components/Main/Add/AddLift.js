@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, Text, View, Button, Image, TouchableOpacity, TextInput, KeyboardAvoidingView, ScrollView } from 'react-native';
 import {connect} from 'react-redux'
 
-import {addLift} from '../redux/Lifts'
+import {addLift} from '../../../redux/Lifts'
 
 import AddLiftSet from './AddLiftSet'
 
@@ -116,7 +116,7 @@ class AddLift extends Component{
 
         <View style={styles.backBar}>
           <TouchableOpacity style={{height:30,width:30,marginLeft:10,}} onPress={ () => { this.props.navigation.dispatch({ type: 'Main' }) } }>
-            <Image source={require('../imgs/back.png')} style={{height:23,width:33}} />
+            <Image source={require('../../../imgs/back.png')} style={{height:23,width:33}} />
           </TouchableOpacity>
         </View>
 
